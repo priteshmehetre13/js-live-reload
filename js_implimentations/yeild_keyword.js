@@ -9,6 +9,7 @@ If we pause the yield expression, the generator function will also get paused an
 
 
 function* showPrices(i) {
+  console.log("Pritesh is trying Yeild");
     while (i < 3) {
       yield i++;
     }
@@ -19,8 +20,7 @@ function* showPrices(i) {
   
   //return 0 because 0 value is passed to the showPrices yield expression
   console.log(gfg.next().value);
-  console.log(gfg.next().value);
-  console.log(gfg.next().value);
+  
   // return 1
   // console.log(gfg.next().value);
   
